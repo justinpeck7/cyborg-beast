@@ -16,7 +16,7 @@ angular.module('cyborg-beast.contact', [])
   })
   .controller('ContactCtrl', function() {
     var contact = this;
-    contact.sendForm = () => {
+    contact.sendForm = function() {
       console.log('got here');
     };
   });
