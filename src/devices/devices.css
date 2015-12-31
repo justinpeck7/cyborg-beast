@@ -1,0 +1,29 @@
+.device-text {
+    color: #797979;
+    font-size: 19px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.device-header {
+    color: #797979;
+    margin-top: 40px;
+}
+
+.device-image {
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border: 2px solid white;
+}
+
+.device-image-single {
+    width: 500px;
+    max-width: 60%;
+}
+
+.device-image-double {
+    width: 700px;
+    max-width: 60%;
+}

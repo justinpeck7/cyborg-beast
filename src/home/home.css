@@ -1,0 +1,9 @@
+.main-image img {
+    width: 100vw;
+    max-width: 100%;
+    user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    margin-left: 0;
+    margin-right: 0;
+}

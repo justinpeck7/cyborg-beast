@@ -1,0 +1,35 @@
+.research-image {
+    margin-top: 40px;
+}
+.research-image img {
+    border: 2px solid white;
+}
+
+.research-text {
+    font-size: 19px;
+    color: #797979;
+}
+
+.study-header {
+    color: #12aedc;
+}
+
+.study-image {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.study-image-top {
+    margin-top: 40px;
+}
+
+.image-desc {
+    font-size: 14px;
+    max-width: 891px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.study-image-outline {
+    border: 2px solid white;
+}
