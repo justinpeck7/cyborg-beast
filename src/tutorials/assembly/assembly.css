@@ -1,0 +1,14 @@
+.measurement-text {
+    font-size: 20px;
+    color: #797979;
+}
+
+.m-image img {
+    max-width: 100%;
+    border: 2px solid white;
+}
+
+.m-image {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}

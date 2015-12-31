@@ -1,0 +1,13 @@
+.tutorial-pics {
+    margin-top: 40px;
+}
+
+.tutorial-pics img {
+    border: 2px solid white;
+    max-width: 100%;
+}
+
+.tutorial-link {
+    margin-top: 20px;
+    font-size: 22px;
+}

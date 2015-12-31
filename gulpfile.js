@@ -16,7 +16,8 @@ const injectOrder = [
         './target/*/**/*.js',
         './target/*/*.js',
         './target/*.css',
-        './target/*/**.css'
+        './target/*/**.css',
+        './target/*/**/*.css'
     ];
 
 gulp.task('clean:target', function() {
@@ -118,7 +119,7 @@ gulp.task('release', function() {
 });
 
 gulp.task('serve', function() {
-    gulp.watch(config.src_scripts.concat(config.src_styles).concat(['./src/*.html', './src/*/**.html']), ['reload']);
+    gulp.watch(config.src_scripts.concat(config.src_styles).concat(['./src/*.html', './src/*/**.html', './src/*/**/*.html', './src/*/**/*.css']), ['reload']);
     connect.server({
         root: './target',
         livereload: true

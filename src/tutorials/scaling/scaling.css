@@ -1,0 +1,35 @@
+.scaling-text {
+    font-size: 20px;
+    color: #797979;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.s-image img {
+    max-width: 100%;
+    border: 2px solid white;
+}
+
+.s-image {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.s-image-top {
+    margin-bottom: 40px;
+}
+
+.s-image-top img {
+    max-width: 100%;
+    border: 2px solid white;
+}
+
+.top-scaling-para {
+    margin-top: 40px;
+   margin-bottom: 20px;
+}
+
+.double-image {
+    max-width: 70%;
+    margin: 0 auto;
+}
