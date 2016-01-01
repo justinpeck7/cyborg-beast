@@ -14,9 +14,15 @@ angular.module('cyborg-beast.contact', [])
       }
     });
   })
-  .controller('ContactCtrl', function() {
+  .controller('ContactCtrl', function($http) {
     var contact = this;
     contact.sendForm = function() {
-      console.log('got here');
+      $http({
+        method: 'POST',
+        url: '/send-message',
+        data: contact.message
+      }).then(function(success, err) {
+
+      });
     };
   });

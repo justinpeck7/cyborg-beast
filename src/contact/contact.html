@@ -8,9 +8,9 @@
 <div class="container">
 
 <form class="contact-form" ng-submit="contact.sendForm()">
-    <input type="text" id="name" placeholder="Name" required ng-model="contact.name">
-    <input type="email" id="email" placeholder="Email" required ng-model="contact.email">
-    <textarea placeholder="Your Message" required ng-model="contact.message"></textarea>
+    <input type="text" id="name" placeholder="Name" required ng-model="contact.message.name">
+    <input type="email" id="email" placeholder="Email" required ng-model="contact.message.email">
+    <textarea placeholder="Your Message" required ng-model="contact.message.content"></textarea>
     <input type="submit" value="Send">
 </form>
 </div>
