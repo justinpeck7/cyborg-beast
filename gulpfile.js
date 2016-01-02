@@ -10,15 +10,15 @@ var gulp = require('gulp'),
     gOpen = require('gulp-open');
 
 const injectOrder = [
-        './target/assets/angular.min.js',
-        './target/assets/*.js',
-        './target/*.js',
-        './target/*/**/*.js',
-        './target/*/*.js',
-        './target/*.css',
-        './target/*/**.css',
-        './target/*/**/*.css'
-    ];
+    './target/assets/angular.min.js',
+    './target/assets/*.js',
+    './target/*.js',
+    './target/*/**/*.js',
+    './target/*/*.js',
+    './target/*.css',
+    './target/*/**.css',
+    './target/*/**/*.css'
+];
 
 gulp.task('clean:target', function() {
     return gulp.src('target', {
@@ -112,8 +112,18 @@ gulp.task('inject:release', ['concat-scripts', 'concat-styles'], function() {
         });
 });
 
+gulp.task('copy-assets:release', function() {
+    return gulp.src('./assets/images/*')
+        .pipe(gulp.dest('./target/bin/assets'));
+});
+
+gulp.task('copy-html:release', function() {
+    return gulp.src(['./src/*', '!./src/*.js', '!./src/*.css', '!./src/common','./src/*/**.html'])
+        .pipe(gulp.dest('./target/bin'));
+});
+
 gulp.task('release', function() {
-    sequence('clean:bin', 'inject:release', function() {
+    sequence('clean:bin', 'copy-assets:release', 'copy-html:release', 'inject:release', function() {
         console.log(chalk.green('Release build completed'));
     });
 });

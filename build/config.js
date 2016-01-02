@@ -16,6 +16,7 @@ var SRC_STYLES = [
 
 var ASSET_STYLES = [
     './assets/fonts/pt-sans-caption.css',
+    './assets/loading/loading.css',
     './node_modules/bootstrap/dist/css/bootstrap.css'
 ];
 

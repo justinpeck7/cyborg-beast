@@ -6,6 +6,9 @@
     margin-top: 40px;
 }
 
+.message-sent {
+    color: #09F509;
+}
 
 .contact-form input {
     color: white;
@@ -31,6 +34,7 @@
 
 .contact-form {
     padding-top: 40px;
+    position: relative;
 }
 
 .contact-form input[type="submit"] {
@@ -42,4 +46,13 @@
     box-sizing: border-box;
     padding: 10px;
     margin-bottom: 20px;
+}
+
+.contact-loading {
+    position: absolute;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }

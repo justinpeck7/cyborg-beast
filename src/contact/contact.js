@@ -16,13 +16,22 @@ angular.module('cyborg-beast.contact', [])
   })
   .controller('ContactCtrl', function($http) {
     var contact = this;
+    contact.messageSent = '';
+    contact.loading = false;
     contact.sendForm = function() {
+      contact.loading = true;
       $http({
         method: 'POST',
         url: '/send-message',
         data: contact.message
       }).then(function(success, err) {
-
+        contact.loading = false;
+        contact.messageSent = 'Sent!';
+        contact.message.name = '';
+        contact.message.email = '';
+        contact.message.content = '';
       });
     };
+
+
   });

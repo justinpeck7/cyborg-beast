@@ -1,14 +1,41 @@
-.measurement-text {
+.asm-text {
     font-size: 20px;
     color: #797979;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-.m-image img {
+.asm-image-large img {
     max-width: 100%;
     border: 2px solid white;
 }
 
-.m-image {
+.asm-image-large {
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.asm-image-small {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.asm-image-small img{
+    max-width: 100%;
+    border: 2px solid white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.asm-subheader {
+    margin-top: 80px;
+}
+
+.two-asm-image {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.finish-text {
+    font-size: 22px;
 }

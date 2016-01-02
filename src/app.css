@@ -36,6 +36,11 @@ h1.header-text {
     color: #AFAFAF;
 }
 
+h2.subheader {
+    font-size: 45px;
+    color: #AFAFAF;
+}
+
 .small-hr {
     width: 60%;
     margin-top: 40px;
@@ -43,4 +48,12 @@ h1.header-text {
 
 .underline {
     text-decoration: underline;
+}
+
+.margin-top {
+    margin-top: 50px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
 }
