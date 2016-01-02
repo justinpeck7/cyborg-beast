@@ -17,7 +17,8 @@ const injectOrder = [
     './target/*/*.js',
     './target/*.css',
     './target/*/**.css',
-    './target/*/**/*.css'
+    './target/*/**/*.css',
+    '!./target/bin'
 ];
 
 gulp.task('clean:target', function() {
