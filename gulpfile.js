@@ -118,7 +118,7 @@ gulp.task('copy-assets:release', function() {
 });
 
 gulp.task('copy-html:release', function() {
-    return gulp.src(['./src/*', '!./src/*.js', '!./src/*.css', '!./src/common','./src/*/**.html'])
+    return gulp.src(['./src/*','./src/*/**', '!./src/*.js', '!./src/*.css', '!./src/*/**.js', '!./src/*/**.css', '!./src/*/**/*.js', '!./src/*/**/*.css', '!./src/common','./src/*/**.html', './src/*/**/*.html'])
         .pipe(gulp.dest('./target/bin'));
 });
 

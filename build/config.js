@@ -11,7 +11,7 @@ var ASSET_SCRIPTS = [
 ];
 
 var SRC_STYLES = [
-    './src/app.css', './src/*/**.css'
+    './src/app.css', './src/*/**.css', './src/*/**/*.css'
 ];
 
 var ASSET_STYLES = [
