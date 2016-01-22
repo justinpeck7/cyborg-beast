@@ -46,12 +46,17 @@ gulp.task('copy:assets-images', function() {
         .pipe(gulp.dest('./target/assets'));
 });
 
+gulp.task('copy:assets-pdf', function() {
+    return gulp.src(['./assets/pdf/*.pdf'])
+        .pipe(gulp.dest('./target/assets'));
+});
+
 gulp.task('copy:source', function() {
     return gulp.src(['./src/*/**', './src/*.js', './src/*/**/**.js', './src/*.css'])
         .pipe(gulp.dest('./target'));
 });
 
-gulp.task('inject:target', ['copy:source', 'copy:asset-scripts', 'copy:asset-styles', 'copy:assets-images'], function() {
+gulp.task('inject:target', ['copy:source', 'copy:asset-scripts', 'copy:asset-styles', 'copy:assets-images', 'copy:assets-pdf'], function() {
     return gulp.src('./src/index.html')
         .pipe(inject(gulp.src(injectOrder, {
             read: false
