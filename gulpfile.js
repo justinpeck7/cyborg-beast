@@ -119,7 +119,7 @@ gulp.task('inject:release', ['concat-scripts', 'concat-styles'], function() {
 });
 
 gulp.task('copy-assets:release', function() {
-    return gulp.src('./assets/images/*')
+    return gulp.src(['./assets/images/*', './assets/pdf/*'])
         .pipe(gulp.dest('./target/bin/assets'));
 });
 
