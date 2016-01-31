@@ -35,7 +35,7 @@ app.all('*', function(req, res, next) {
 
 app.post('/send-message', function(req, res) {
   var mailOptions = {
-    from: 'Cyborg Beast Website <cyborg.beast.server@gmail.com>',
+    from: 'Cyborg Beast Website <cyborg.beast.server@aol.com>',
     to: emailTo,
     subject: 'Message from Cyborg Beast Website',
     text: 'FROM: ' + req.body.name + '\nEMAIL: ' + req.body.email + '\n\n' + req.body.content
