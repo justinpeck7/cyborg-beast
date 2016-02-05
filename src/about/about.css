@@ -42,14 +42,19 @@ div.about-image {
     border: 2px solid white;
 }
 
+.profile-image-main {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
 .profile-row {
     margin-top: 60px;
 }
 
-.jorge-row {
+.big-pic-row {
     padding: 0 !important;
 }
 
-.rakesh-row {
+.margin-top-row {
     margin-top: 60px;
 }
