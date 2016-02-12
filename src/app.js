@@ -16,6 +16,7 @@ angular.module('cyborg-beast', [
   .config(function myAppConfig($urlRouterProvider, $stateProvider) {
     $urlRouterProvider.otherwise('/');
   })
-  .controller('AppCtrl', function AppCtrl() {
+  .controller('AppCtrl', function AppCtrl(Analytics) {
     var app = this;
+    Analytics.addHit();
   });

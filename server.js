@@ -6,7 +6,8 @@ var http = require('http'),
   mailConfig = require('./emailconfig'),
   nodemailer = require('nodemailer'),
   transporter = nodemailer.createTransport(mailConfig.mailURL),
-  emailTo = mailConfig.mailTo.join(', ');
+  emailTo = mailConfig.mailTo.join(', '),
+  fs = require('fs');
 
 app.use(bodyParser.urlencoded({
   extended: true
@@ -31,6 +32,11 @@ app.all('*', function(req, res, next) {
   } else {
     next();
   }
+});
+
+app.post('/analytics', function(req, res) {
+  var hits = parseInt(fs.readFileSync('log.txt', 'utf8'), 10);
+  fs.writeFile('log.txt', hits + 1, 'utf8');
 });
 
 app.post('/send-message', function(req, res) {
