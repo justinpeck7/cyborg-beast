@@ -34,11 +34,6 @@ app.all('*', function(req, res, next) {
   }
 });
 
-app.post('/analytics', function(req, res) {
-  var hits = parseInt(fs.readFileSync('log.txt', 'utf8'), 10);
-  fs.writeFile('log.txt', hits + 1, 'utf8');
-});
-
 app.post('/send-message', function(req, res) {
   var mailOptions = {
     from: 'Cyborg Beast Website <cyborg.beast.server@aol.com>',
